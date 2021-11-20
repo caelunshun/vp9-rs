@@ -1,0 +1,23 @@
+[package]
+name = "vp9"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+byteorder = "1"
+thiserror = "1"
+
+[build-dependencies]
+cfg-if = "1"
+# Github API JSON
+serde = { version = "1", features = [ "derive" ] }
+# For downloading precompiled libvpx
+ureq = { version = "2", features = [ "json" ] }   
+
+[dev-dependencies]
+anyhow = "1"
+glam = "0.18"
+pollster = "0.2"
+rodio = { version = "0.14", default-features = false, features = [ "vorbis" ] }
+wgpu = "0.10"
+winit = "0.25"

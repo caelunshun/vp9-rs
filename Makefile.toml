@@ -1,0 +1,4 @@
+[tasks.generate-bindings]
+script = '''
+bindgen vpx.h -o src/ffi.rs
+'''
